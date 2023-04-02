@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #536976, #BBD2C5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: "Poppins", sans-sarif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+#quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    min-width: 800px;
+    max-width: 1200px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.quiz-header {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#submit {
+    background-color: #8e44ad;
+    color: white;
+    display: block;
+    font-size: large;
+    font-family: inherit;
+    /* min-width: 100px; */
+    width: 100%;
+    border-radius: 3px 3px 8px 8px;
+    padding: 1rem;
+    border: none;
+}
+
+
+
+#submit:hover {
+    background-color: #af43de;
+    color: white;
+}
+
+#submit:disabled {
+    background-color: #8e44ad;
+}
+
+label {
+    margin: 8px;
+}
+
+.reset {
+    background-color: #8e44ad;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    /* padding-bottom: 0; */
+}
+
+#rbutton {
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+#rbutton:hover {
+    /* size: 110%; */
+    color: black;
+}
+
+#rnbutton {
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+#rnbutton:hover {
+    /* size: 110%; */
+    color: red;
+}
+
+.out {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.in {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.score{
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.yourscore{
+    font-size: 5rem;
+}
